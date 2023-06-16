@@ -84,3 +84,31 @@ div#social a {
 
   margin-right: 4px;
 }
+
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    background: #0a0a0a;
+    padding: 0;
+  }
+
+  div#app {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: larger;
+  }
+  h2 {
+    font-size: large;
+  }
+  p {
+    font-size: medium;
+  }
+
+  div.card,
+  div#revolt {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}

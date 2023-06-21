@@ -3,17 +3,21 @@ body {
   width: 100%;
   height: 100%;
 
+  color: #fff;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+html {
   background: #000;
-  color: #fff;
+}
 
-  padding: 20px;
-  box-sizing: border-box;
-
-  font-family: "Inter", sans-serif;
+body {
+  background: radial-gradient(circle, #4f04ff42 0%, #000 400px);
 }
 
 h1,
@@ -26,21 +30,44 @@ a {
   color: #b67eff;
 }
 
+hr {
+  border: 2px solid #ffffff11;
+  width: calc(100% - 40px);
+  border-radius: 8px;
+}
+
 div#app {
   width: 580px;
-  background: #0a0a0a;
-  border-radius: 10px;
+}
+
+div#title {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+div#title h1 {
+  margin: 0 10px 0 20px;
+}
+
+div#title img {
+  width: 48px;
+  height: 48px;
 }
 
 div.card,
 div#revolt {
   margin: 20px;
+  border-radius: 10px;
 }
 
 div.card {
-  background: #111;
-  border-radius: 10px;
-  padding: 5px;
+  border: 1px solid #ffffff11;
+  transition: 250ms;
+}
+
+div.card:hover {
+  background: #ffffff11;
 }
 
 div#revolt {
@@ -52,7 +79,6 @@ div#revolt {
   background-size: cover;
 
   background: #111;
-  border-radius: 10px;
 }
 
 div#revolt img {
@@ -63,7 +89,12 @@ div#revolt img {
 }
 
 div#revolt h1 {
-  margin: 10px;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+div#revolt p {
+  margin: 5px;
   margin-left: 20px;
 }
 
@@ -86,10 +117,17 @@ div#social a {
 }
 
 @media only screen and (max-width: 600px) {
-  html,
   body {
-    background: #0a0a0a;
-    padding: 0;
+    display: block;
+  }
+
+  hr {
+    display: none;
+  }
+
+  div#title img {
+    width: 28px;
+    height: 28px;
   }
 
   div#app {
@@ -103,12 +141,12 @@ div#social a {
     font-size: large;
   }
   p {
-    font-size: medium;
+    font-size: small;
   }
 
   div.card,
   div#revolt {
-    margin: 0;
+    margin: 20px;
     margin-bottom: 10px;
   }
 

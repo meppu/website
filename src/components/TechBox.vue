@@ -2,21 +2,21 @@
 import { defineProps, defineAsyncComponent } from 'vue'
 
 const props = defineProps<{
-  title: string,
-  link: string,
+  title: string
+  link: string
   desc: string
-}>();
+}>()
 
 const Icon = defineAsyncComponent(() => import(`./icons/Icon${props.title}.vue`))
 </script>
 
 <template>
   <div class="child-container">
-      <Icon />
+    <Icon />
     <div>
       <a :href="props.link">{{ props.title }}</a>
-    <p>{{ props.desc }}</p>
-    </div> 
+      <p>{{ props.desc }}</p>
+    </div>
   </div>
 </template>
 
@@ -30,8 +30,8 @@ div.child-container {
 
   display: flex;
   align-items: center;
-  
-  transition: .25s;
+
+  transition: 0.25s;
 }
 
 div.child-container:hover {
@@ -45,11 +45,10 @@ div.child-container > div > a {
   color: var(--rp-text);
 }
 
-
 div.child-container > svg {
   background: var(--rp-overlay);
 
-  margin-right: .75rem;
+  margin-right: 0.75rem;
   width: 4rem;
   height: 100%;
   padding: 1rem;

@@ -7,9 +7,9 @@ import RealStatus from '../components/RealStatus.vue'
   <main>
     <h1>👋 Welcome</h1>
     <p>I'm meppu, a self-taught software engineer from Turkey.</p>
-    
+
     <OnlineStatus discord-id="1013270483560579165" revolt-id="01F6YN5JWMHJFKPDZVYB6434HX" />
-    <RealStatus/>
+    <RealStatus />
 
     <hr />
 
@@ -36,11 +36,5 @@ import RealStatus from '../components/RealStatus.vue'
 p {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
-}
-
-hr {
-  margin: 1rem 0 1rem 0;
-  border: 1px solid var(--rp-overlay);
-  border-radius: 5px;
 }
 </style>

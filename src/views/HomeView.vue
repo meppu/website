@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import OnlineStatus from '../components/OnlineStatus.vue'
+import RealStatus from '../components/RealStatus.vue'
 </script>
 
 <template>
   <main>
     <h1>👋 Welcome</h1>
     <p>I'm meppu, a self-taught software engineer from Turkey.</p>
+    
     <OnlineStatus discord-id="1013270483560579165" revolt-id="01F6YN5JWMHJFKPDZVYB6434HX" />
+    <RealStatus/>
 
     <hr />
 

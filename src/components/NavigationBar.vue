@@ -14,13 +14,13 @@ import IconEmail from './icons/IconEmail.vue'
     </nav>
     <nav>
       <a href="https://github.com/meppu" target="_blank">
-        <IconGithub/>
+        <IconGithub />
       </a>
       <a href="https://github.com/meppu" target="_blank">
-        <IconDiscord/>
+        <IconDiscord />
       </a>
       <a href="mailto:website@meppu.boo">
-        <IconEmail/>
+        <IconEmail />
       </a>
     </nav>
   </div>
@@ -50,7 +50,7 @@ div > nav {
 div > nav > a {
   text-decoration: none;
   color: var(--rp-text);
-  transition: .25s;
+  transition: 0.25s;
 }
 
 div > nav:first-child > a {
@@ -58,7 +58,7 @@ div > nav:first-child > a {
 }
 
 div > nav:last-child > a {
-  margin: 0 0 0 .5rem;
+  margin: 0 0 0 0.5rem;
 
   width: 2em;
   height: 2em;
@@ -69,8 +69,8 @@ div > nav:last-child > a:first-child {
   height: 1.75em;
 }
 
-div > nav > a:hover, div > nav > a.router-link-active {
+div > nav > a:hover,
+div > nav > a.router-link-active {
   color: var(--rp-iris);
 }
-
 </style>

@@ -8,9 +8,7 @@ import IconEmail from './icons/IconEmail.vue'
   <div>
     <nav>
       <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
       <RouterLink to="/technologies">Technologies</RouterLink>
-      <RouterLink to="/projects">Projects</RouterLink>
     </nav>
     <nav>
       <a href="https://github.com/meppu" target="_blank">

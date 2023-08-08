@@ -1,53 +1,55 @@
-/* color palette from <https://github.com/vuejs/theme> */
+/* 
+  taken from 
+  https://raw.githubusercontent.com/rose-pine/palette/main/dist/css/rose-pine-rgb.css
+*/
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+  --rp-base: rgb(25, 23, 36);
+  --rp-surface: rgb(31, 29, 46);
+  --rp-overlay: rgb(38, 35, 58);
+  --rp-muted: rgb(110, 106, 134);
+  --rp-subtle: rgb(144, 140, 170);
+  --rp-text: rgb(224, 222, 244);
+  --rp-love: rgb(235, 111, 146);
+  --rp-gold: rgb(246, 193, 119);
+  --rp-rose: rgb(235, 188, 186);
+  --rp-pine: rgb(49, 116, 143);
+  --rp-foam: rgb(156, 207, 216);
+  --rp-iris: rgb(196, 167, 231);
+  --rp-highlight-low: rgb(33, 32, 46);
+  --rp-highlight-med: rgb(64, 61, 82);
+  --rp-highlight-high: rgb(82, 79, 103);
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+  --rp-moon-base: rgb(35, 33, 54);
+  --rp-moon-surface: rgb(42, 39, 63);
+  --rp-moon-overlay: rgb(57, 53, 82);
+  --rp-moon-muted: rgb(110, 106, 134);
+  --rp-moon-subtle: rgb(144, 140, 170);
+  --rp-moon-text: rgb(224, 222, 244);
+  --rp-moon-love: rgb(235, 111, 146);
+  --rp-moon-gold: rgb(246, 193, 119);
+  --rp-moon-rose: rgb(234, 154, 151);
+  --rp-moon-pine: rgb(62, 143, 176);
+  --rp-moon-foam: rgb(156, 207, 216);
+  --rp-moon-iris: rgb(196, 167, 231);
+  --rp-moon-highlight-low: rgb(42, 40, 62);
+  --rp-moon-highlight-med: rgb(68, 65, 90);
+  --rp-moon-highlight-high: rgb(86, 82, 110);
 
-  --vt-c-indigo: #2c3e50;
-
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
-
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
-
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
+  --rp-dawn-base: rgb(250, 244, 237);
+  --rp-dawn-surface: rgb(255, 250, 243);
+  --rp-dawn-overlay: rgb(242, 233, 222);
+  --rp-dawn-muted: rgb(152, 147, 165);
+  --rp-dawn-subtle: rgb(121, 117, 147);
+  --rp-dawn-text: rgb(87, 82, 121);
+  --rp-dawn-love: rgb(180, 99, 122);
+  --rp-dawn-gold: rgb(234, 157, 52);
+  --rp-dawn-rose: rgb(215, 130, 126);
+  --rp-dawn-pine: rgb(40, 105, 131);
+  --rp-dawn-foam: rgb(86, 148, 159);
+  --rp-dawn-iris: rgb(144, 122, 169);
+  --rp-dawn-highlight-low: rgb(244, 237, 232);
+  --rp-dawn-highlight-med: rgb(223, 218, 217);
+  --rp-dawn-highlight-high: rgb(206, 202, 205);
 }
 
 *,
@@ -55,31 +57,20 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  font-weight: normal;
 }
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
+  color: var(--rp-text);
+  background: var(--rp-base);
+
   transition:
     color 0.5s,
     background-color 0.5s;
+
   line-height: 1.6;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

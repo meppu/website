@@ -1,5 +1,5 @@
 <script lang="ts">
-import TechBox from '../components/TechBox.vue'
+import TechCard from '../components/TechCard.vue'
 
 export default {
   data() {
@@ -35,7 +35,7 @@ export default {
   },
 
   components: {
-    TechBox
+    TechCard
   }
 }
 </script>
@@ -60,7 +60,7 @@ export default {
     </p>
 
     <div>
-      <TechBox
+      <TechCard
         v-for="tech in technologies"
         :key="tech.title"
         :title="tech.title"

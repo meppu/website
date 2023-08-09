@@ -1,20 +1,35 @@
-<script setup lang="ts">
+<script lang="ts">
 import IconGithub from './icons/IconGithub.vue'
 import IconDiscord from './icons/IconDiscord.vue'
 import IconEmail from './icons/IconEmail.vue'
+
+import { useSound } from '@vueuse/sound'
+import clickTone from '../assets/sounds/interface-click-tone.mp3'
+
+export default {
+  components: {
+    IconGithub,
+    IconDiscord,
+    IconEmail
+  },
+  setup() {
+    const { play, _stop } = useSound(clickTone, { playbackRate: 0.5 })
+    return { play }
+  }
+}
 </script>
 
 <template>
   <div>
     <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/technologies">Technologies</RouterLink>
+      <RouterLink @click="play" to="/">Home</RouterLink>
+      <RouterLink @click="play" to="/technologies">Technologies</RouterLink>
     </nav>
     <nav>
       <a href="https://github.com/meppu" target="_blank">
         <IconGithub />
       </a>
-      <a href="https://github.com/meppu" target="_blank">
+      <a href="https://discord.com/users/1013270483560579165" target="_blank">
         <IconDiscord />
       </a>
       <a href="mailto:website@meppu.boo">

@@ -41,23 +41,36 @@ export default {
 </script>
 
 <template>
-  <h1>🔨 Compilation of Technologies</h1>
-  <p>
-    Compilation of languages and frameworks I <strong>presently</strong> favour, note that this list
-    doesn't include all frameworks, nor tools, nor services.
-  </p>
+  <main
+    v-motion
+    :initial="{
+      opacity: 0,
+      y: 100
+    }"
+    :enter="{
+      opacity: 1,
+      y: 0
+    }"
+    :delay="100"
+  >
+    <h1>🔨 Compilation of Technologies</h1>
+    <p>
+      Compilation of languages and frameworks I <strong>presently</strong> favour, note that this
+      list doesn't include all frameworks, nor tools, nor services.
+    </p>
 
-  <hr />
+    <hr />
 
-  <div>
-    <TechBox
-      v-for="tech in technologies"
-      :key="tech.title"
-      :title="tech.title"
-      :link="tech.link"
-      :desc="tech.desc"
-    />
-  </div>
+    <div>
+      <TechBox
+        v-for="tech in technologies"
+        :key="tech.title"
+        :title="tech.title"
+        :link="tech.link"
+        :desc="tech.desc"
+      />
+    </div>
+  </main>
 </template>
 
 <style scoped>

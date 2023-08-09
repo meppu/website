@@ -1,47 +1,18 @@
 <script lang="ts">
-export default {
-  data() {
-    return {
-      discordStatus: 'Offline',
-      revoltStatus: 'Offline'
-    }
-  },
+import { useStatusStore } from '@/stores/status'
 
+export default {
   props: {
     discordId: String,
     revoltId: String
   },
 
-  async mounted() {
-    const discordPromise = fetch(`https://api.lanyard.rest/v1/users/${this.$props.discordId}`)
-    const revoltPromise = fetch(`https://revard.meppu.boo/api/users/${this.$props.revoltId}`)
+  setup() {
+    return { status: useStatusStore() }
+  },
 
-    Promise.all([discordPromise, revoltPromise]).then(async ([discordResp, revoltResp]) => {
-      const {
-        data: { discord_status: discord_status }
-      } = await discordResp.json()
-      const { online: revolt_online } = await revoltResp.json()
-
-      switch (discord_status) {
-        case 'online':
-          this.discordStatus = 'Online'
-          break
-
-        case 'dnd':
-          this.discordStatus = 'Busy'
-          break
-
-        case 'idle':
-          this.discordStatus = 'Idle'
-          break
-
-        case 'offline':
-          this.discordStatus = 'Offline'
-          break
-      }
-
-      this.revoltStatus = revolt_online ? 'Online' : 'Offline'
-    })
+  mounted() {
+    this.status.fetch(this.discordId!, this.revoltId!)
   }
 }
 </script>
@@ -49,10 +20,10 @@ export default {
 <template>
   <div>
     <p>
-      <span :class="discordStatus">{{ discordStatus }}</span> on Discord
+      <span :class="status.discordStatus">{{ status.discordStatus }}</span> on Discord
     </p>
     <p>
-      <span :class="revoltStatus">{{ revoltStatus }}</span> on Revolt
+      <span :class="status.revoltStatus">{{ status.revoltStatus }}</span> on Revolt
     </p>
   </div>
 </template>

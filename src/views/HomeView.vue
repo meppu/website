@@ -4,7 +4,18 @@ import RealStatus from '../components/RealStatus.vue'
 </script>
 
 <template>
-  <main>
+  <main
+    v-motion
+    :initial="{
+      opacity: 0,
+      y: 100
+    }"
+    :enter="{
+      opacity: 1,
+      y: 0
+    }"
+    :delay="100"
+  >
     <h1>👋 Welcome</h1>
     <p>I'm meppu, a self-taught software engineer from Turkey.</p>
 

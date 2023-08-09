@@ -22,18 +22,14 @@ import RealStatus from '../components/RealStatus.vue'
     <OnlineStatus discord-id="1013270483560579165" revolt-id="01F6YN5JWMHJFKPDZVYB6434HX" />
     <RealStatus />
 
-    <hr />
-
-    <h1>💻 Programming</h1>
+    <h2>💻 Programming</h2>
     <p>
       Whilst my primary focus centres on Rust and the BEAM ecosystem, it's important to note that
       this doesn't imply I'm solely capable of working with them. What distinguishes us from the
-      typical 'coder' is our ability to quickly adapt to various technologies.
+      typical "frameworker" is our ability to quickly adapt to various technologies.
     </p>
 
-    <hr />
-
-    <h1>😺 Additional</h1>
+    <h2>😺 Additional</h2>
     <p>
       However, my interests go beyond just coding. My life isn't all about programming. I'm a big
       fan of cats and, to be honest, I like cats more than humans. Even if I don't play games much,

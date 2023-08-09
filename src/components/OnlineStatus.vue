@@ -35,18 +35,18 @@ p {
 }
 
 span.Online {
-  color: var(--rp-iris);
+  color: var(--color-iris);
 }
 
 span.Busy {
-  color: var(--rp-love);
+  color: var(--color-love);
 }
 
 span.Idle {
-  color: var(--rp-rose);
+  color: var(--color-rose);
 }
 
 span.Offline {
-  color: var(--rp-muted);
+  color: var(--color-muted);
 }
 </style>

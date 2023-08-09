@@ -22,8 +22,8 @@ const Icon = defineAsyncComponent(() => import(`./icons/Icon${props.title}.vue`)
 
 <style scoped>
 div.child-container {
-  background: var(--rp-surface);
-  border: 1px solid var(--rp-overlay);
+  background: var(--color-surface);
+  border: 1px solid var(--color-overlay);
   border-radius: 10px;
 
   margin: 1em;
@@ -35,18 +35,18 @@ div.child-container {
 }
 
 div.child-container:hover {
-  background: var(--rp-overlay);
+  background: var(--color-overlay);
 }
 
 div.child-container > div > a {
   font-size: medium;
   text-decoration: none;
 
-  color: var(--rp-text);
+  color: var(--color-text);
 }
 
 div.child-container > svg {
-  background: var(--rp-overlay);
+  background: var(--color-overlay);
 
   margin-right: 0.75rem;
   width: 4rem;
@@ -59,6 +59,6 @@ div.child-container > svg {
 
 div.child-container > div > p {
   font-size: smaller;
-  color: var(--rp-muted);
+  color: var(--color-muted);
 }
 </style>

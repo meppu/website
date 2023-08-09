@@ -59,8 +59,6 @@ export default {
       list doesn't include all frameworks, nor tools, nor services.
     </p>
 
-    <hr />
-
     <div>
       <TechBox
         v-for="tech in technologies"

@@ -58,7 +58,7 @@ span {
   font-size: small;
   font-weight: 400;
 
-  color: var(--rp-subtle);
+  color: var(--color-subtle);
 }
 
 p {

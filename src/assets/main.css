@@ -10,13 +10,3 @@ p {
   font-weight: 300;
   opacity: 0.8;
 }
-
-hr {
-  margin: 1rem 0 1rem 0;
-  border: 1px solid var(--rp-overlay);
-  border-radius: 5px;
-}
-
-h1 {
-  font-size: x-large;
-}

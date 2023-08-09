@@ -45,8 +45,8 @@ div {
   align-items: center;
   justify-content: space-between;
 
-  background: var(--rp-surface);
-  border: 1px solid var(--rp-overlay);
+  background: var(--color-surface);
+  border: 1px solid var(--color-overlay);
   border-radius: 40px;
   padding: 0.4rem 1rem;
 
@@ -62,7 +62,7 @@ div > nav {
 
 div > nav > a {
   text-decoration: none;
-  color: var(--rp-text);
+  color: var(--color-text);
   transition: 0.25s;
 }
 
@@ -84,6 +84,6 @@ div > nav:last-child > a:first-child {
 
 div > nav > a:hover,
 div > nav > a.router-link-active {
-  color: var(--rp-iris);
+  color: var(--color-iris);
 }
 </style>

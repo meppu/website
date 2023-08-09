@@ -41,7 +41,7 @@ export default {
 </script>
 
 <template>
-  <p>
+  <p class="description">
     {{ status }}
     <span>
       The above status is estimated and not always certain. For quickest contact, please use the

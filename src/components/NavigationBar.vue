@@ -24,6 +24,7 @@ export default {
     <nav>
       <RouterLink @click="play" to="/">Home</RouterLink>
       <RouterLink @click="play" to="/technologies">Technologies</RouterLink>
+      <RouterLink @click="play" to="/projects">Projects</RouterLink>
     </nav>
     <nav>
       <a href="https://github.com/meppu" target="_blank">
@@ -47,8 +48,8 @@ div {
 
   background: var(--color-surface);
   border: 1px solid var(--color-overlay);
-  border-radius: 40px;
-  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
 
   font-weight: 500;
 }

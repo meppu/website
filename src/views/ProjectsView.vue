@@ -1,0 +1,56 @@
+<script lang="ts">
+import { useRepositoriesStore } from '@/stores/repositories'
+import ProjectCard from '../components/ProjectCard.vue'
+
+export default {
+  setup() {
+    return { repoStore: useRepositoriesStore() }
+  },
+
+  components: {
+    ProjectCard
+  },
+
+  mounted() {
+    this.repoStore.fetch('meppu')
+  }
+}
+</script>
+
+<template>
+  <main
+    v-motion
+    :initial="{
+      opacity: 0,
+      y: 100
+    }"
+    :enter="{
+      opacity: 1,
+      y: 0
+    }"
+    :delay="100"
+  >
+    <h1>📦 GitHub Repositories</h1>
+    <p class="description">Explore my GitHub repositories.</p>
+    <div class="grid-container">
+      <ProjectCard
+        v-for="repo in repoStore.repositories"
+        :key="repo.name"
+        :name="repo.name"
+        :desc="repo.description"
+        :link="repo.html_url"
+        :language="repo.language"
+        :stars="repo.stargazers_count"
+      />
+    </div>
+  </main>
+</template>
+
+<style scoped>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3);
+  gap: 1em;
+}
+</style>

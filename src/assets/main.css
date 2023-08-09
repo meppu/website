@@ -10,3 +10,8 @@ p {
   font-weight: 300;
   opacity: 0.8;
 }
+
+p.description {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}

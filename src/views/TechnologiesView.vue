@@ -54,7 +54,7 @@ export default {
     :delay="100"
   >
     <h1>🔨 Compilation of Technologies</h1>
-    <p>
+    <p class="description">
       Compilation of languages and frameworks I <strong>presently</strong> favour, note that this
       list doesn't include all frameworks, nor tools, nor services.
     </p>
@@ -70,10 +70,3 @@ export default {
     </div>
   </main>
 </template>
-
-<style scoped>
-p {
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-</style>

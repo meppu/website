@@ -14,7 +14,7 @@ const Icon = defineAsyncComponent(() => import(`./icons/Icon${props.title}.vue`)
   <div class="child-container">
     <Icon />
     <div>
-      <a :href="props.link">{{ props.title }}</a>
+      <a :href="props.link" target="_blank">{{ props.title }}</a>
       <p>{{ props.desc }}</p>
     </div>
   </div>
@@ -24,7 +24,7 @@ const Icon = defineAsyncComponent(() => import(`./icons/Icon${props.title}.vue`)
 div.child-container {
   background: var(--color-surface);
   border: 1px solid var(--color-overlay);
-  border-radius: 10px;
+  border-radius: 8px;
 
   margin: 1em;
 
@@ -53,8 +53,8 @@ div.child-container > svg {
   height: 100%;
   padding: 1rem;
 
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 
 div.child-container > div > p {

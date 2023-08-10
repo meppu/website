@@ -59,14 +59,12 @@ export default {
       list doesn't include all frameworks, nor tools, nor services.
     </p>
 
-    <div>
-      <TechCard
-        v-for="tech in technologies"
-        :key="tech.title"
-        :title="tech.title"
-        :link="tech.link"
-        :desc="tech.desc"
-      />
-    </div>
+    <TechCard
+      v-for="tech in technologies"
+      :key="tech.title"
+      :title="tech.title"
+      :link="tech.link"
+      :desc="tech.desc"
+    />
   </main>
 </template>

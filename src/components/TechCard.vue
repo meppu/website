@@ -26,12 +26,13 @@ div.child-container {
   border: 1px solid var(--color-overlay);
   border-radius: 8px;
 
-  margin: 1em;
+  margin: 1rem;
 
   display: flex;
   align-items: center;
 
   transition: 0.25s;
+  box-shadow: var(--color-shadow) 0px 0px 12px;
 }
 
 div.child-container:hover {
@@ -60,5 +61,30 @@ div.child-container > svg {
 div.child-container > div > p {
   font-size: smaller;
   color: var(--color-muted);
+  opacity: 1;
+}
+
+@media (max-width: 620px) {
+  div.child-container {
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+
+  div.child-container > div > a {
+    font-size: small;
+  }
+
+  div.child-container > div > p {
+    font-size: x-small;
+  }
+
+  div.child-container > svg {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    background: var(--color-overlay-);
+    min-width: 3rem;
+    width: 3rem;
+  }
 }
 </style>

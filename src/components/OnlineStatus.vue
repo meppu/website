@@ -49,4 +49,10 @@ span.Idle {
 span.Offline {
   color: var(--color-muted);
 }
+
+@media (max-width: 620px) {
+  p {
+    font-weight: 400;
+  }
+}
 </style>

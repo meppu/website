@@ -48,10 +48,12 @@ div {
 
   background: var(--color-surface);
   border: 1px solid var(--color-overlay);
-  border-radius: 8px;
-  padding: 0.4rem 0.6rem;
+  border-radius: 4rem;
+  padding: 0.4rem 1rem;
 
   font-weight: 500;
+
+  box-shadow: var(--color-shadow) 0px 0px 12px;
 }
 
 div > nav {
@@ -72,19 +74,33 @@ div > nav:first-child > a {
 }
 
 div > nav:last-child > a {
-  margin: 0 0 0 0.5rem;
-
-  width: 2em;
-  height: 2em;
+  margin-left: 0.2rem;
+  width: 1.8rem;
+  height: 1.6rem;
 }
 
 div > nav:last-child > a:first-child {
-  width: 1.8em;
-  height: 1.75em;
+  width: 1.6rem;
+  height: 1.5rem;
 }
 
 div > nav > a:hover,
 div > nav > a.router-link-active {
   color: var(--color-iris);
+}
+
+@media (max-width: 620px) {
+  div {
+    display: block;
+    border-radius: 0;
+    border: none;
+    text-align: center;
+    box-shadow: none;
+  }
+
+  div > nav {
+    justify-content: center;
+    margin: 0.25rem;
+  }
 }
 </style>

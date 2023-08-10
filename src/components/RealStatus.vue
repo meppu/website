@@ -53,16 +53,24 @@ export default {
 <style scoped>
 span {
   display: block;
-
-  font-style: italic;
-  font-size: small;
   font-weight: 400;
 
   color: var(--color-subtle);
+  opacity: 0.5;
 }
 
 p {
   font-size: small;
   font-weight: 500;
+}
+
+@media (max-width: 620px) {
+  p {
+    font-weight: 400;
+  }
+
+  span {
+    font-size: x-small;
+  }
 }
 </style>

@@ -52,6 +52,7 @@
   --color-highlight-low: var(--rp-dawn-highlight-low);
   --color-highlight-med: var(--rp-dawn-highlight-med);
   --color-highlight-high: var(--rp-dawn-highlight-high);
+  --color-shadow: #c9c9c93e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -71,6 +72,7 @@
     --color-highlight-low: var(--rp-highlight-low);
     --color-highlight-med: var(--rp-highlight-med);
     --color-highlight-high: var(--rp-highlight-high);
+    --color-shadow: #0000003e;
   }
 }
 

@@ -37,8 +37,10 @@ div.child-container {
 
   display: grid;
 
-  padding: 1em;
+  padding: 1rem;
   transition: 0.25s;
+
+  box-shadow: var(--color-shadow) 0px 0px 12px;
 }
 
 div.child-container:hover {
@@ -55,6 +57,7 @@ div.child-container a {
 div.child-container p {
   font-size: small;
   color: var(--color-muted);
+  opacity: 1;
 }
 
 div.flex-container {
@@ -65,19 +68,22 @@ div.flex-container {
 }
 
 div.flex-container > p {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 div.flex-container > p::before {
   display: inline-block;
-  margin-right: 0.4em;
+  margin-right: 0.3rem;
 
-  background: #000;
+  background: var(--color-iris);
+
   width: 10px;
   height: 10px;
   border-radius: 50px;
   content: ' ';
+  opacity: 0.8;
 }
+
 div.flex-container > p.Nix::before {
   background: #7e7eff;
 }
@@ -115,5 +121,19 @@ div.flex-container > p.C::before {
 }
 div.flex-container > p.Zig::before {
   background: #ec915c;
+}
+
+@media (max-width: 620px) {
+  div.child-container {
+    padding: 0.8rem 1rem;
+  }
+
+  div.child-container > div > a {
+    font-size: small;
+  }
+
+  div.child-container > div > p {
+    font-size: x-small;
+  }
 }
 </style>

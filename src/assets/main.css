@@ -15,3 +15,21 @@ p.description {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
+
+@media (max-width: 620px) {
+  #app {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  h2 {
+    font-size: larger;
+  }
+
+  p {
+    font-size: small;
+  }
+}

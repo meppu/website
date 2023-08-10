@@ -50,7 +50,14 @@ export default {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3);
-  gap: 1em;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 620px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 }
 </style>

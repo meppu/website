@@ -1,46 +1,48 @@
-# website
+# Website
 
-This template should help get you started developing with Vue 3 in Vite.
+The source code of my personal website, which is built using VueJS.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Utilising [Revard](https://github.com/meppu/revard) for Revolt and [Lanyard](https://github.com/Phineas/lanyard) for Discord status.
+- Fetching repositories dynamically using the GitHub API.
+- Incorporating icons from various sources:
+  - Navigation bar and star icons are obtained from the [MingCute Icon Collection](https://icones.js.org/collection/mingcute).
+  - Erlang icon is extracted from [VSCode Symbols extension](https://github.com/miguelsolorio/vscode-symbols).
+  - All other icons for technologies view are obtained from [Simple Icons](https://simpleicons.org/).
+- The navigation bar features a click sound effect which is obtained from [MixKit](https://mixkit.co/free-sound-effects/click/).
+- The website is designed using [Rose Pine](https://github.com/rose-pine/palette) color palette.
 
 ## Project Setup
 
-```sh
-npm install
-```
+Follow these steps to set up the project:
 
-### Compile and Hot-Reload for Development
+1. Install the necessary dependencies using npm:
 
-```sh
-npm run dev
-```
+   ```sh
+   npm install
+   ```
 
-### Type-Check, Compile and Minify for Production
+2. To launch the development environment with hot-reloading, use the following command:
 
-```sh
-npm run build
-```
+   ```sh
+   npm run dev
+   ```
 
-### Lint with [ESLint](https://eslint.org/)
+3. For production deployment, use the following command:
+
+   ```sh
+   npm run build
+   ```
+
+## Code Quality
+
+Ensure code quality by running ESLint:
 
 ```sh
 npm run lint
 ```
+
+## License
+
+This website is licensed under the MIT License.

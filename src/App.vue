@@ -3,6 +3,14 @@ import { RouterView } from 'vue-router'
 
 import NavigationBar from './components/NavigationBar.vue'
 import Footer from './components/Footer.vue'
+
+import { onMounted } from 'vue';
+import { useRepositoriesStore } from '@/stores/repositories'
+
+// fetch repositories at start for better ux
+onMounted(() => {
+  useRepositoriesStore().fetch('meppu')
+})
 </script>
 
 <template>
@@ -24,6 +32,3 @@ import Footer from './components/Footer.vue'
 
     <Footer />
 </template>
-
-<style scoped>
-</style>

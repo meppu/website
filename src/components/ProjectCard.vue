@@ -146,7 +146,7 @@ div.flex-container > p.C\#::before {
   background: #178600;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 960px) {
   div.child-container {
     padding: 0.8rem 1rem;
   }

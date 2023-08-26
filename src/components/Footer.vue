@@ -28,7 +28,7 @@ p {
   font-weight: 500;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 960px) {
   hr {
     margin: 1rem;
     margin-bottom: 0;

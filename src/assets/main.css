@@ -37,9 +37,16 @@ p.description {
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 960px) {
+  body {
+    display: block;
+  }
+
   #app {
-    padding: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
   }
 
   h1 {

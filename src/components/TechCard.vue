@@ -63,7 +63,7 @@ div.child-container > div > p {
   opacity: 1;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 960px) {
   div.child-container {
     margin: 0;
     margin-bottom: 1rem;

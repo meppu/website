@@ -66,7 +66,7 @@ span.Offline {
   color: var(--color-muted);
 }
 
-@media (max-width: 620px) {
+@media (max-width: 960px) {
   p {
     font-weight: 400;
   }

@@ -90,18 +90,28 @@ div > nav > a.router-link-active {
   color: var(--color-muted);
 }
 
-@media (max-width: 620px) {
+@media (max-width: 960px) {
   div {
     display: block;
-    border-radius: 0;
-    border: none;
-    text-align: center;
-    box-shadow: none;
+    padding: 0 10px;
+    padding-top: 8px;
+    margin-bottom: 1rem;
   }
 
   div > nav {
-    justify-content: center;
-    margin: 0.25rem;
+    display: inline-flex;
+    flex-direction: row;
+
+    height: unset;
+    width: 50%;
   }
+
+  div > nav > a {
+    display: unset;
+  }
+
+  div > nav > a > svg {
+  width: 24px;
+}
 }
 </style>

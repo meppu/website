@@ -37,6 +37,13 @@ p.description {
   margin-bottom: 1.5rem;
 }
 
+.tippy-box[data-theme~='min'] {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-overlay);
+  color: var(--color-text);
+  border-radius: 6px;
+}
+
 @media (max-width: 960px) {
   body {
     display: block;

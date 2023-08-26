@@ -10,6 +10,8 @@ import IconEmail from './icons/IconEmail.vue'
 import { useSound } from '@vueuse/sound'
 import clickTone from '../assets/sounds/interface-click-tone.mp3'
 
+import { directive as tippyDirective } from 'vue-tippy'
+
 export default {
   components: {
     IconHome,
@@ -20,6 +22,11 @@ export default {
     IconDiscord,
     IconEmail
   },
+
+  directives: {
+    tippy: tippyDirective
+  },
+
   setup() {
     const { play, _stop } = useSound(clickTone, { playbackRate: 0.5 })
     return { play }
@@ -30,18 +37,20 @@ export default {
 <template>
   <div>
     <nav>
-      <RouterLink @click="play" to="/"><IconHome /></RouterLink>
-      <RouterLink @click="play" to="/technologies"><IconHammer /></RouterLink>
-      <RouterLink @click="play" to="/projects"><IconPackage /></RouterLink>
+      <RouterLink v-tippy="'Home'" @click="play" to="/"><IconHome /></RouterLink>
+      <RouterLink v-tippy="'Technologies'" @click="play" to="/technologies"
+        ><IconHammer
+      /></RouterLink>
+      <RouterLink v-tippy="'Projects'" @click="play" to="/projects"><IconPackage /></RouterLink>
     </nav>
     <nav>
-      <a href="https://github.com/meppu" target="_blank">
+      <a v-tippy="'GitHub'" href="https://github.com/meppu" target="_blank">
         <IconGithub />
       </a>
-      <a href="https://discord.com/users/1013270483560579165" target="_blank">
+      <a v-tippy="'Discord'" href="https://discord.com/users/1013270483560579165" target="_blank">
         <IconDiscord />
       </a>
-      <a href="mailto:website@meppu.boo">
+      <a v-tippy="'Email'" href="mailto:website@meppu.boo">
         <IconEmail />
       </a>
     </nav>

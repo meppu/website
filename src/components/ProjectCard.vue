@@ -33,7 +33,7 @@ export default {
 div.child-container {
   background: var(--color-surface);
   border: 1px solid var(--color-overlay);
-  border-radius: 8px;
+  border-radius: 6px;
 
   display: grid;
 
@@ -43,6 +43,10 @@ div.child-container {
 
 div.child-container:hover {
   background: var(--color-overlay);
+}
+
+div.child-container:hover a {
+  text-decoration: underline;
 }
 
 div.child-container a {

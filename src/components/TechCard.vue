@@ -24,7 +24,7 @@ const Icon = defineAsyncComponent(() => import(`./icons/Icon${props.title}.vue`)
 div.child-container {
   background: var(--color-surface);
   border: 1px solid var(--color-overlay);
-  border-radius: 8px;
+  border-radius: 6px;
 
   margin-top: 1rem;
 
@@ -36,6 +36,10 @@ div.child-container {
 
 div.child-container:hover {
   background: var(--color-overlay);
+}
+
+div.child-container:hover a {
+  text-decoration: underline;
 }
 
 div.child-container > div > a {

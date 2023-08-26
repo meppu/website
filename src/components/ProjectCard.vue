@@ -119,8 +119,33 @@ div.flex-container > p.Rust::before {
 div.flex-container > p.C::before {
   background: #555555;
 }
+
 div.flex-container > p.Zig::before {
   background: #ec915c;
+}
+
+div.flex-container > p.SCSS::before {
+  background: #c6538c;
+}
+
+div.flex-container > p.Python::before {
+  background: #3572A5;
+}
+
+div.flex-container > p.Go::before {
+  background: #00ADD8;
+}
+
+div.flex-container > p.Kotlin::before {
+  background: #A97BFF;
+}
+
+div.flex-container > p.Java::before {
+  background: #b07219;
+}
+
+div.flex-container > p.C\#::before {
+  background: #178600;
 }
 
 @media (max-width: 620px) {

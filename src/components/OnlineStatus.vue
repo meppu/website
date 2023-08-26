@@ -34,6 +34,22 @@ p {
   font-weight: 500;
 }
 
+span {
+  display: inline-flex;
+  align-items: center;
+}
+
+span::before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+  border: 2px solid var(--color-base);
+  display: inline-block;
+  background: currentColor;
+}
+
 span.Online {
   color: var(--color-iris);
 }

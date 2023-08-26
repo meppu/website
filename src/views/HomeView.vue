@@ -4,20 +4,9 @@ import RealStatus from '../components/RealStatus.vue'
 </script>
 
 <template>
-  <main
-    v-motion
-    :initial="{
-      opacity: 0,
-      y: 100
-    }"
-    :enter="{
-      opacity: 1,
-      y: 0
-    }"
-    :delay="100"
-  >
+  <main>
     <h1>👋 Welcome</h1>
-    <p class="description">I'm meppu, a self-taught software engineer from Turkey.</p>
+    <p class="description">I'm meppu, 17 years old self-taught software engineer from Turkey.</p>
 
     <OnlineStatus discord-id="1013270483560579165" revolt-id="01F6YN5JWMHJFKPDZVYB6434HX" />
     <RealStatus />

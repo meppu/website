@@ -41,18 +41,7 @@ export default {
 </script>
 
 <template>
-  <main
-    v-motion
-    :initial="{
-      opacity: 0,
-      y: 100
-    }"
-    :enter="{
-      opacity: 1,
-      y: 0
-    }"
-    :delay="100"
-  >
+  <main>
     <h1>🔨 Compilation of Technologies</h1>
     <p class="description">
       Compilation of languages and frameworks I <strong>presently</strong> favour, note that this

@@ -6,19 +6,24 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <header>
-    <NavigationBar />
-  </header>
+    <header>
+      <NavigationBar />
+    </header>
 
-  <div id="content">
-    <RouterView />
-  </div>
+    <div id="content">
+      <RouterView 
+    v-motion
+    :initial="{
+      opacity: 0
+    }"
+    :enter="{
+      opacity: 1
+    }"
+    :delay="250" />
+    </div>
 
-  <Footer />
+    <Footer />
 </template>
 
 <style scoped>
-div#content {
-  padding: 1.2rem;
-}
 </style>

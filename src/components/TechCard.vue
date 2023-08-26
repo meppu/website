@@ -26,7 +26,7 @@ div.child-container {
   border: 1px solid var(--color-overlay);
   border-radius: 8px;
 
-  margin: 1rem;
+  margin-top: 1rem;
 
   display: flex;
   align-items: center;

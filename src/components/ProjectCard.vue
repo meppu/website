@@ -37,7 +37,7 @@ div.child-container {
 
   display: grid;
 
-  padding: 1rem;
+  padding: .8rem;
   transition: 0.25s;
 }
 

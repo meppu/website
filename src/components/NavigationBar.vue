@@ -1,4 +1,8 @@
 <script lang="ts">
+import IconHome from './icons/IconHome.vue'
+import IconHammer from './icons/IconHammer.vue'
+import IconPackage from './icons/IconPackage.vue'
+
 import IconGithub from './icons/IconGithub.vue'
 import IconDiscord from './icons/IconDiscord.vue'
 import IconEmail from './icons/IconEmail.vue'
@@ -8,6 +12,10 @@ import clickTone from '../assets/sounds/interface-click-tone.mp3'
 
 export default {
   components: {
+    IconHome,
+    IconHammer,
+    IconPackage,
+    
     IconGithub,
     IconDiscord,
     IconEmail
@@ -22,9 +30,9 @@ export default {
 <template>
   <div>
     <nav>
-      <RouterLink @click="play" to="/">Home</RouterLink>
-      <RouterLink @click="play" to="/technologies">Technologies</RouterLink>
-      <RouterLink @click="play" to="/projects">Projects</RouterLink>
+      <RouterLink @click="play" to="/"><IconHome /></RouterLink>
+      <RouterLink @click="play" to="/technologies"><IconHammer /></RouterLink>
+      <RouterLink @click="play" to="/projects"><IconPackage /></RouterLink>
     </nav>
     <nav>
       <a href="https://github.com/meppu" target="_blank">
@@ -42,49 +50,44 @@ export default {
 
 <style scoped>
 div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 
   background: var(--color-surface);
   border: 1px solid var(--color-overlay);
-  border-radius: 4rem;
-  padding: 0.4rem 1rem;
-
-  font-weight: 500;
+  border-radius: 6px;
+  padding: 1.2rem 0px .8rem;
 }
 
 div > nav {
+  text-align: center;
+  height: 50%;
+  
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+}
 
-  font-size: small;
+div > nav:last-child {
+  justify-content: flex-end;
 }
 
 div > nav > a {
+  display: block;
+
   text-decoration: none;
   color: var(--color-text);
   transition: 0.25s;
 }
 
-div > nav:first-child > a {
-  margin: 0.2rem;
-}
-
-div > nav:last-child > a {
-  margin-left: 0.2rem;
-  width: 1.8rem;
-  height: 1.6rem;
-}
-
-div > nav:last-child > a:first-child {
-  width: 1.6rem;
-  height: 1.5rem;
+div > nav > a > svg {
+  width: 2rem;
+  height: 24px;
 }
 
 div > nav > a:hover,
 div > nav > a.router-link-active {
-  text-decoration: line-through;
+  color: var(--color-muted);
 }
 
 @media (max-width: 620px) {

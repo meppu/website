@@ -17,7 +17,7 @@ export default {
 
 <style scoped>
 hr {
-  margin: 2rem 0 1rem 0;
+  margin-bottom: .6rem;
   border: 1px solid var(--color-overlay);
   border-radius: 5px;
 }

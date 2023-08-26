@@ -44,7 +44,7 @@ export default {
   <p class="description">
     {{ status }}
     <span>
-      The above status is estimated and not always certain. For quickest contact, please use the
+      (?) The above status is estimated and not always certain. For quickest contact, please use the
       email on the site.
     </span>
   </p>

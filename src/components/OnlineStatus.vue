@@ -51,7 +51,7 @@ span::before {
 }
 
 span.Online {
-  color: var(--color-iris);
+  color: var(--color-foam);
 }
 
 span.Busy {

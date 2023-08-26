@@ -2,15 +2,15 @@
   --color-base: #fafafa;
   --color-surface: #f2f2f2;
   --color-overlay: #e5e5e5;
-  --color-muted: #555;
+  --color-muted: #5a5a5a;
   --color-subtle: #444;
   --color-text: #333;
-  --color-love: hsl(0, 100%, 60%);
-  --color-gold: hsl(25, 100%, 60%);
-  --color-rose: hsl(50, 100%, 60%);
-  --color-pine: hsl(200, 100%, 60%);
-  --color-foam: hsl(125, 100%, 60%);
-  --color-iris: hsl(250, 100%, 60%);
+  --color-love: hsl(0, 100%, 50%);
+  --color-gold: hsl(25, 100%, 50%);
+  --color-rose: hsl(50, 100%, 50%);
+  --color-pine: hsl(200, 100%, 50%);
+  --color-foam: hsl(125, 50%, 50%);
+  --color-iris: hsl(250, 100%, 50%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,7 +38,11 @@
 }
 
 body {
-  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
   color: var(--color-text);
   background: var(--color-base);
 

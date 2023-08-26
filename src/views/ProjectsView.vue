@@ -18,18 +18,7 @@ export default {
 </script>
 
 <template>
-  <main
-    v-motion
-    :initial="{
-      opacity: 0,
-      y: 100
-    }"
-    :enter="{
-      opacity: 1,
-      y: 0
-    }"
-    :delay="100"
-  >
+  <main>
     <h1>📦 GitHub Repositories</h1>
     <p class="description">Explore my GitHub repositories.</p>
     <div class="grid-container">

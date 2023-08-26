@@ -67,4 +67,8 @@ p.description {
   p {
     font-size: small;
   }
+
+  .tippy-box[data-theme~='min'] {
+    display: none;
+  }
 }

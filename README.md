@@ -11,7 +11,6 @@ The source code of my personal website, which is built using VueJS.
   - Erlang icon is extracted from [VSCode Symbols extension](https://github.com/miguelsolorio/vscode-symbols).
   - All other icons for technologies view are obtained from [Simple Icons](https://simpleicons.org/).
 - The navigation bar features a click sound effect which is obtained from [MixKit](https://mixkit.co/free-sound-effects/click/).
-- The website is designed using [Rose Pine](https://github.com/rose-pine/palette) color palette.
 
 ## Project Setup
 

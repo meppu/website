@@ -37,7 +37,7 @@ div.child-container {
 
   display: grid;
 
-  padding: .8rem;
+  padding: 0.8rem;
   transition: 0.25s;
 }
 
@@ -127,15 +127,15 @@ div.flex-container > p.SCSS::before {
 }
 
 div.flex-container > p.Python::before {
-  background: #3572A5;
+  background: #3572a5;
 }
 
 div.flex-container > p.Go::before {
-  background: #00ADD8;
+  background: #00add8;
 }
 
 div.flex-container > p.Kotlin::before {
-  background: #A97BFF;
+  background: #a97bff;
 }
 
 div.flex-container > p.Java::before {

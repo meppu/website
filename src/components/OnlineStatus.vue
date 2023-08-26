@@ -40,7 +40,7 @@ span {
 }
 
 span::before {
-  content: " ";
+  content: ' ';
   width: 10px;
   height: 10px;
   border-radius: 50%;

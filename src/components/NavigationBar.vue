@@ -15,7 +15,7 @@ export default {
     IconHome,
     IconHammer,
     IconPackage,
-    
+
     IconGithub,
     IconDiscord,
     IconEmail
@@ -56,13 +56,13 @@ div {
   background: var(--color-surface);
   border: 1px solid var(--color-overlay);
   border-radius: 6px;
-  padding: 1.2rem 0px .8rem;
+  padding: 1.2rem 0px 0.8rem;
 }
 
 div > nav {
   text-align: center;
   height: 50%;
-  
+
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -111,7 +111,7 @@ div > nav > a.router-link-active {
   }
 
   div > nav > a > svg {
-  width: 24px;
-}
+    width: 24px;
+  }
 }
 </style>

@@ -52,8 +52,6 @@ div {
   padding: 0.4rem 1rem;
 
   font-weight: 500;
-
-  box-shadow: var(--color-shadow) 0px 0px 12px;
 }
 
 div > nav {
@@ -86,7 +84,7 @@ div > nav:last-child > a:first-child {
 
 div > nav > a:hover,
 div > nav > a.router-link-active {
-  color: var(--color-iris);
+  text-decoration: line-through;
 }
 
 @media (max-width: 620px) {

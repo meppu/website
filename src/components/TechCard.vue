@@ -32,7 +32,6 @@ div.child-container {
   align-items: center;
 
   transition: 0.25s;
-  box-shadow: var(--color-shadow) 0px 0px 12px;
 }
 
 div.child-container:hover {

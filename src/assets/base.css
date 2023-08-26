@@ -1,78 +1,32 @@
-/* 
-  taken from 
-  https://raw.githubusercontent.com/rose-pine/palette/main/dist/css/rose-pine-rgb.css
-*/
 :root {
-  --rp-base: rgb(25, 23, 36);
-  --rp-surface: rgb(31, 29, 46);
-  --rp-overlay: rgb(38, 35, 58);
-  --rp-muted: rgb(110, 106, 134);
-  --rp-subtle: rgb(144, 140, 170);
-  --rp-text: rgb(224, 222, 244);
-  --rp-love: rgb(235, 111, 146);
-  --rp-gold: rgb(246, 193, 119);
-  --rp-rose: rgb(235, 188, 186);
-  --rp-pine: rgb(49, 116, 143);
-  --rp-foam: rgb(156, 207, 216);
-  --rp-iris: rgb(196, 167, 231);
-  --rp-highlight-low: rgb(33, 32, 46);
-  --rp-highlight-med: rgb(64, 61, 82);
-  --rp-highlight-high: rgb(82, 79, 103);
-
-  --rp-dawn-base: rgb(250, 244, 237);
-  --rp-dawn-surface: rgb(255, 250, 243);
-  --rp-dawn-overlay: rgb(242, 233, 222);
-  --rp-dawn-muted: rgb(152, 147, 165);
-  --rp-dawn-subtle: rgb(121, 117, 147);
-  --rp-dawn-text: rgb(87, 82, 121);
-  --rp-dawn-love: rgb(180, 99, 122);
-  --rp-dawn-gold: rgb(234, 157, 52);
-  --rp-dawn-rose: rgb(215, 130, 126);
-  --rp-dawn-pine: rgb(40, 105, 131);
-  --rp-dawn-foam: rgb(86, 148, 159);
-  --rp-dawn-iris: rgb(144, 122, 169);
-  --rp-dawn-highlight-low: rgb(244, 237, 232);
-  --rp-dawn-highlight-med: rgb(223, 218, 217);
-  --rp-dawn-highlight-high: rgb(206, 202, 205);
-}
-
-:root {
-  --color-base: var(--rp-dawn-base);
-  --color-surface: var(--rp-dawn-surface);
-  --color-overlay: var(--rp-dawn-overlay);
-  --color-muted: var(--rp-dawn-muted);
-  --color-subtle: var(--rp-dawn-subtle);
-  --color-text: var(--rp-dawn-text);
-  --color-love: var(--rp-dawn-love);
-  --color-gold: var(--rp-dawn-gold);
-  --color-rose: var(--rp-dawn-rose);
-  --color-pine: var(--rp-dawn-pine);
-  --color-foam: var(--rp-dawn-foam);
-  --color-iris: var(--rp-dawn-iris);
-  --color-highlight-low: var(--rp-dawn-highlight-low);
-  --color-highlight-med: var(--rp-dawn-highlight-med);
-  --color-highlight-high: var(--rp-dawn-highlight-high);
-  --color-shadow: #c9c9c93e;
+  --color-base: #fafafa;
+  --color-surface: #f2f2f2;
+  --color-overlay: #e5e5e5;
+  --color-muted: #555;
+  --color-subtle: #444;
+  --color-text: #333;
+  --color-love: hsl(0, 100%, 60%);
+  --color-gold: hsl(25, 100%, 60%);
+  --color-rose: hsl(50, 100%, 60%);
+  --color-pine: hsl(200, 100%, 60%);
+  --color-foam: hsl(125, 100%, 60%);
+  --color-iris: hsl(250, 100%, 60%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-base: var(--rp-base);
-    --color-surface: var(--rp-surface);
-    --color-overlay: var(--rp-overlay);
-    --color-muted: var(--rp-muted);
-    --color-subtle: var(--rp-subtle);
-    --color-text: var(--rp-text);
-    --color-love: var(--rp-love);
-    --color-gold: var(--rp-gold);
-    --color-rose: var(--rp-rose);
-    --color-pine: var(--rp-pine);
-    --color-foam: var(--rp-foam);
-    --color-iris: var(--rp-iris);
-    --color-highlight-low: var(--rp-highlight-low);
-    --color-highlight-med: var(--rp-highlight-med);
-    --color-highlight-high: var(--rp-highlight-high);
-    --color-shadow: #0000003e;
+    --color-base: #0a0a0a;
+    --color-surface: #121212;
+    --color-overlay: #1a1a1a;
+    --color-muted: #777;
+    --color-subtle: #888;
+    --color-text: #bbb;
+    --color-love: hsl(0, 100%, 75%);
+    --color-gold: hsl(25, 100%, 75%);
+    --color-rose: hsl(50, 100%, 75%);
+    --color-pine: hsl(200, 100%, 75%);
+    --color-foam: hsl(125, 100%, 75%);
+    --color-iris: hsl(250, 100%, 75%);
   }
 }
 
